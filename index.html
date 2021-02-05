@@ -4,53 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header id="header">
+        <div class="container">
 
-        <img src="" id="header-img" alt="RUVY logo" />
+            <img src="logo.png" alt="logo" id="header-img">
 
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="#feature">Feature</a></li>
-                <li><a class="nav-link" href="#product-demo">Product Demo</a></li>
-                <li><a class="nav-link" href="#pricing">Pricing</a></li>
-            </ul>
-        </nav>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#product" class="nav-link">Product</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
 
+        </div>
     </header>
+    
+    <section id="hero">
 
-    <section id="feature">
-        
         <h2>Perfume-Inspired Whitening and Beauty Soap</h2>
 
-        <form action="https://www.freecodecamp.com/email-submit" method="get" id="form">
-        
-        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
 
-        <input type="submit" value="Get started" id="submit" />
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <input type="submit" value="Get Started" id="submit" class="button">
         
         </form>
+    </section>
+
+    <section class="text-container" id="features">
+
+        <h3>RUVY 24K Gold Soap for HER</h3>
+        <p>Whitening Soap in a Natural Perfume Scent with collagen, detoxifying agent, vitamin C & vitamin E for that natural blemish free, glowing, youthful, smoother and softer skin.</p>
+        <br>
+
+        <h3>RUVY Charcoal Soap for HIM</h3>
+        <p>Remove excess skin deep dirt with RUVY. An all natural detoxification soap made with activated charcoal that cleanses and revitalizes your skin.</p>
 
     </section>
 
-    <figure id="product-demo">
+    <section class="responsive" id="product">
 
-        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fruvy.ph.4a%2Fvideos%2F445975149890414%2F&show_text=false&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" frameborder="0"></iframe>
-
-    </figure>
-
-    <section id="pricing">
-
-        <ul>
-            <li><h2>Charcoal</h2></li>
-            <li><h2>24K</h2></li>
-        </ul>
+        <iframe id="video" src="https://www.facebook.com/plugins/video.php?height=313&href=https%3A%2F%2Fwww.facebook.com%2Fruvy.ph.4a%2Fvideos%2F386387419371118%2F&show_text=false&width=560" width="560" height="313" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
     </section>
+
+    <section class="flex-container" id="pricing">
+
+        <div class="box">
+            <div class="product">
+                <h2>24K Gold Soap</h2>
+            </div>
+            <div class="product-description">
+                <h3>Php 249.00</h3>
+                <p>Box of 5 rounded soap</p>
+                <p>Collagen, Detoxifying Agent</p>
+                <p>Vitamin C & Vitamin E</p>
+            </div>
+            <div class="product-submit">
+                <input type="submit" value="Select" class="btn">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="product">
+                <h2>Charcoal Soap</h2>
+            </div>
+            <div class="product-description">
+                <h3>Php 249.00</h3>
+                <p>Box of 5 rounded soap</p>
+                <p>All natural detoxification soap</p>
+                <p>Activated charcoal</p>
+            </div>
+            <div class="product-submit">
+                <input type="submit" value="Select" class="btn">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="nav-footer">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2021, RUVY</p>
+        </div>
+
+    </footer>
 
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
